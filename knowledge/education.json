@@ -1,0 +1,20 @@
+[
+  {
+    "degree": "B.E. Computer Science & Engineering",
+    "institution": "National Engineering College, Kovilpatti",
+    "score": "CGPA: 8.16",
+    "status": "In Progress"
+  },
+  {
+    "degree": "Higher Secondary Education (12th Grade)",
+    "institution": "St. John's Matric hr secondary school, Veeravanallur",
+    "score": "Score: 87.16%",
+    "status": "Completed"
+  },
+  {
+    "degree": "Secondary School Education (10th Grade)",
+    "institution": "St. John's Matric hr secondary school, Veeravanallur",
+    "score": "Score: 92.4%",
+    "status": "Completed"
+  }
+]

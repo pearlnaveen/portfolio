@@ -1,0 +1,38 @@
+[
+  {
+    "name": "driftRL",
+    "description": "A Reinforcement Learning-based system that automatically handles data drift in datasets by removing missing, duplicate, and invalid data blocks dynamically.",
+    "technologies": ["Python", "Machine Learning", "Docker", "Reinforcement Learning"],
+    "github_url": "https://github.com/pearlnaveen/driftRL-Openenv",
+    "role": "Lead Developer",
+    "highlights": [
+      "Built a custom RL environment to detect and clean data drift.",
+      "Used Docker for containerization and reproducible execution.",
+      "Achieved dynamic preprocessing and cleaning of datasets."
+    ]
+  },
+  {
+    "name": "Machine Log Monitor",
+    "description": "A full-stack machine monitoring system built with Spring Boot, REST APIs, and a modern frontend dashboard to track system health and resolve error logs efficiently.",
+    "technologies": ["Java", "Spring Boot", "Maven", "REST APIs", "SQL", "Frontend Dashboards"],
+    "github_url": "https://github.com/pearlnaveen/Machine-Log-Monitoring-System",
+    "role": "Full Stack Developer",
+    "highlights": [
+      "Developed a robust backend in Spring Boot to process system health logs.",
+      "Designed REST API endpoints to feed real-time monitoring data to the dashboard.",
+      "Provided an interactive UI for administrators to track and resolve error logs."
+    ]
+  },
+  {
+    "name": "Tour Booking Manager",
+    "description": "A console-based software applying core Object-Oriented programming concepts in C++ to manage user selection, reservations, payments, and receipt file generation.",
+    "technologies": ["C++", "OOPs", "File I/O", "Console Interface"],
+    "github_url": "https://github.com/pearlnaveen/Tour-Booking-Management-System-Using-OOPs-in-c-",
+    "role": "Creator",
+    "highlights": [
+      "Utilized C++ Object-Oriented principles (Inheritance, Polymorphism, Encapsulation) for clean architecture.",
+      "Implemented file read/write systems for reservation persistence and receipt printing.",
+      "Designed an intuitive console menu flow for customer billing and ticket management."
+    ]
+  }
+]

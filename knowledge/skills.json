@@ -1,0 +1,19 @@
+{
+  "languages": [
+    { "name": "C", "proficiency": "80%", "level": "Advanced" },
+    { "name": "C++", "proficiency": "85%", "level": "Advanced" },
+    { "name": "Java", "proficiency": "75%", "level": "Intermediate" },
+    { "name": "Python", "proficiency": "80%", "level": "Advanced" }
+  ],
+  "development": [
+    { "name": "Node", "proficiency": "70%", "level": "Intermediate" },
+    { "name": "Git GitHub", "proficiency": "80%", "level": "Advanced" },
+    { "name": "DBMS", "proficiency": "80%", "level": "Advanced" }
+  ],
+  "core_competencies": [
+    { "name": "Machine Learning", "proficiency": "65%", "level": "Intermediate" },
+    { "name": "Data Structure", "proficiency": "80%", "level": "Advanced" },
+    { "name": "Communication", "proficiency": "90%", "level": "Expert" },
+    { "name": "Problem Solving", "proficiency": "85%", "level": "Advanced" }
+  ]
+}

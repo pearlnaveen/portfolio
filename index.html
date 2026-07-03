@@ -1,0 +1,942 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Muthu Naveen N | Portfolio & Resume</title>
+    <meta name="description"
+        content="Portfolio of Muthu Naveen N - Software Engineer & AI Enthusiast. Dedicated to building scalable software, AI-powered applications, and robust backend solutions.">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Prism tomorrow CSS theme for chatbot code blocks -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism-tomorrow.min.css">
+</head>
+
+<body>
+
+    <!-- Top Right Manifesto Quote -->
+    <div class="top-right-manifesto">MANIFEST! BELEIVE! RECEIVE!</div>
+
+    <!-- Custom Glowing Cursor -->
+    <div id="custom-cursor"></div>
+    <div id="custom-cursor-ring"></div>
+
+    <!-- Robotic Boot Loading Screen -->
+    <div id="loading-screen">
+        <div class="loader-content">
+            <div class="cyber-eye-container">
+                <div class="cyber-eye-outer"></div>
+                <div class="cyber-eye-inner"></div>
+                <i class="fas fa-robot cyber-eye-icon"></i>
+            </div>
+            <div class="loader-title">AIML COGNITIVE CORE INIT</div>
+            <div class="loader-bar-bg">
+                <div class="loader-bar-fill"></div>
+            </div>
+            <div class="loader-status-container">
+                <span class="loader-status">CONNECTING TO NEURAL CORES...</span>
+                <span class="loader-percentage">0%</span>
+            </div>
+            <div class="loader-logs-container">
+                <div class="loader-logs" id="loader-logs-terminal">
+                    <!-- Javascript will append diagnostic logs here -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- AI Quotes Entrance Screen -->
+    <div id="entrance-screen" class="hidden">
+        <div class="perspective-grid-overlay"></div>
+        <div class="entrance-card glass-card">
+            <div class="entrance-header">
+                <span class="pulse-dot"></span>
+                <span class="header-tag">SYSTEMS STANDBY // SELECT INTELLECT</span>
+            </div>
+            <div class="entrance-quote-box">
+                <i class="fas fa-quote-left quote-icon-bg"></i>
+                <p id="entrance-quote-text">"Loading intellectual parameters..."</p>
+                <span id="entrance-quote-author" class="quote-author">- System Engine</span>
+            </div>
+            <button id="entrance-enter-btn" class="btn robotic-enter-btn">
+                <span class="btn-text">INITIALIZE LINK</span>
+                <span class="btn-glow"></span>
+            </button>
+        </div>
+    </div>
+
+    <!-- Glowing Background Elements -->
+    <div class="ambient-glows">
+        <div class="glow-orb glow-1"></div>
+        <div class="glow-orb glow-2"></div>
+        <div class="glow-orb glow-3"></div>
+    </div>
+
+    <!-- Top Window Level Status Bar -->
+    <div class="top-status-bar">
+        <div class="level-indicator">LEVEL 1 // EXPLORER.</div>
+        <div class="status-progress-track">
+            <div class="status-progress-fill" style="width: 100%;"></div>
+        </div>
+        <div class="status-controls-wrapper">
+            <div class="status-percent">100% COMPLETE</div>
+            <button id="sound-toggle-btn" class="hud-sound-btn" title="Toggle Audio Synthesizer">
+                <i class="fas fa-volume-up"></i>
+                <span class="sound-status-label">AUDIO: ON</span>
+            </button>
+        </div>
+    </div>
+
+    <!-- Left Sidebar Navigation -->
+    <nav class="sidebar-nav">
+        <div class="sidebar-brand">
+            <a href="#" class="brand-logo">🤍</a>
+        </div>
+        <ul class="sidebar-links">
+            <li>
+                <a href="#home" class="active" title="Home">
+                    <i class="fas fa-desktop"></i>
+                    <span class="nav-label">Home</span>
+                </a>
+            </li>
+            <li>
+                <a href="#about" title="About">
+                    <i class="fas fa-microchip"></i>
+                    <span class="nav-label">About</span>
+                </a>
+            </li>
+            <li>
+                <a href="#education" title="Academic Journey">
+                    <i class="fas fa-graduation-cap"></i>
+                    <span class="nav-label">Journey</span>
+                </a>
+            </li>
+            <li>
+                <a href="#skills" title="Skills & Tech">
+                    <i class="fas fa-laptop-code"></i>
+                    <span class="nav-label">Skills</span>
+                </a>
+            </li>
+            <li>
+                <a href="#projects" title="Projects">
+                    <i class="fas fa-layer-group"></i>
+                    <span class="nav-label">Projects</span>
+                </a>
+            </li>
+            <li>
+                <a href="#powerups" title="AI Powerups">
+                    <i class="fas fa-bolt"></i>
+                    <span class="nav-label">Powerups</span>
+                </a>
+            </li>
+            <li>
+                <a href="#capabilities" title="Core Capabilities">
+                    <i class="fas fa-project-diagram"></i>
+                    <span class="nav-label">Capabilities</span>
+                </a>
+            </li>
+            <li>
+                <a href="#certifications" title="Certifications">
+                    <i class="fas fa-certificate"></i>
+                    <span class="nav-label">Credentials</span>
+                </a>
+            </li>
+            <li>
+                <a href="#contact" title="Get In Touch">
+                    <i class="fas fa-terminal"></i>
+                    <span class="nav-label">Contact</span>
+                </a>
+            </li>
+        </ul>
+        <div class="sidebar-mobile-toggle" id="sidebar-toggle">
+            <i class="fas fa-bars"></i>
+        </div>
+    </nav>
+
+    <!-- Main Content Wrapper -->
+    <main class="main-content-wrapper">
+
+        <!-- Hero Section -->
+        <section id="home" class="hero-section active">
+            <div class="perspective-floor-grid"></div>
+            <div class="hero-container-centered">
+                <!-- Center profile card exactly as shown in the picture -->
+                <div class="glass-card main-profile-card">
+                    <div class="card-indicator-arrow"><i class="fas fa-location-arrow"></i></div>
+                    <div class="card-corner top-left-decor"></div>
+                    <div class="card-corner bottom-right-decor"></div>
+
+                    <h4 class="profile-welcome">HELLO, IT'S ME</h4>
+                    <h1 class="profile-name">Muthu Naveen N</h1>
+                    <h3 class="profile-role">And I'm a <span>AI Enthusiast & Software Engineer</span></h3>
+
+                    <div class="profile-quote-container">
+                        <span class="quote-quote open-quote">“</span>
+                        <p class="profile-quote-text">Building intelligence to shape the future of technology.</p>
+                        <span class="quote-quote close-quote">”</span>
+                    </div>
+
+                    <div class="profile-socials">
+                        <a href="https://github.com/pearlnaveen" target="_blank" title="GitHub"
+                            class="social-circle-link">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/muthu-naveen-n-24104028cse/" target="_blank"
+                            title="LinkedIn" class="social-circle-link">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="mailto:pearlnaveen24@gmail.com" title="Email" class="social-circle-link">
+                            <i class="fas fa-envelope"></i>
+                        </a>
+                    </div>
+
+                    <div class="profile-actions">
+                        <a href="knowledge/MUTHU_NAVEEN_N.pdf" download="Muthu Naveen N.pdf"
+                            class="btn download-cv-btn">
+                            <i class="fas fa-download"></i> DOWNLOAD CV
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="about-section">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-container">
+                <!-- Profile Image Column -->
+                <div class="about-img">
+                    <div class="about-img-frame">
+                        <img src="myphoto.jpg" alt="Muthu Naveen N Profile Picture">
+                    </div>
+                </div>
+
+                <!-- Bio Column -->
+                <div class="about-text">
+                    <p>Hi! I'm Muthu Naveen N, a motivated Computer Science student with proficiency in C/C++ and
+                        intermediate-level Java, and a strong interest in Artificial Intelligence. I focus on developing
+                        efficient and reliable software solutions using core programming principles, as well as building
+                        scalable AI models and real-world AI applications.</p>
+
+                    <h3>Primary Interests</h3>
+                    <div class="skills-tags">
+                        <span class="tag">Artificial Intelligence</span>
+                        <span class="tag">Machine Learning</span>
+                        <span class="tag">Backend Engineering</span>
+                        <span class="tag">Data Structures & Algorithms</span>
+                        <span class="tag">Object-Oriented Programming</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Education Timeline Section -->
+        <section id="education" class="education-section">
+            <h2 class="section-title">Academic Journey</h2>
+            <div class="timeline">
+                <!-- Step 1 -->
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content glass-card">
+                        <div class="timeline-main">
+                            <div class="study-highlight">B.E. Computer Science & Engineering</div>
+                            <div class="institution-name">National Engineering College, Kovilpatti</div>
+                        </div>
+                        <div class="academic-score-wrapper">
+                            <div class="academic-score">CGPA: 8.16</div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Step 2 -->
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content glass-card">
+                        <div class="timeline-main">
+                            <div class="study-highlight">Higher Secondary Education (12th Grade)</div>
+                            <div class="institution-name">St. John's Matric hr secondary school, Veeravanallur</div>
+                        </div>
+                        <div class="academic-score-wrapper">
+                            <div class="academic-score">Score: 87.16%</div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Step 3 -->
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content glass-card">
+                        <div class="timeline-main">
+                            <div class="study-highlight">Secondary School Education (10th Grade)</div>
+                            <div class="institution-name">St. John's Matric hr secondary school, Veeravanallur</div>
+                        </div>
+                        <div class="academic-score-wrapper">
+                            <div class="academic-score">Score: 92.4%</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section (Skill Inventory Grid) -->
+        <section id="skills" class="skills-section">
+            <h2 class="section-title">Skill Inventory</h2>
+            <div class="skills-status-subbar">
+                <span><i class="fas fa-circle-notch fa-spin"></i> DATABASE_READY</span>
+                <span><i class="fas fa-microchip"></i> SYNC_STABLE</span>
+            </div>
+            <div class="skills-inventory-grid">
+
+                <!-- Card 1 (C) -->
+                <div class="skill-inventory-card glass-card">
+                    <div class="skill-logo-box c-box">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <div class="skill-meta">
+                        <h3>C</h3>
+                        <p>CORE SYSTEM <span class="status-dot blue"></span></p>
+                    </div>
+                </div>
+
+                <!-- Card 2 (C++) -->
+                <div class="skill-inventory-card glass-card">
+                    <div class="star-badge">STAR</div>
+                    <div class="skill-logo-box cpp-box">
+                        <i class="fas fa-file-code"></i>
+                    </div>
+                    <div class="skill-meta">
+                        <h3>C++</h3>
+                        <p>HIGH PERFORMANCE <span class="status-dot blue"></span></p>
+                    </div>
+                </div>
+
+                <!-- Card 3 (Java) -->
+                <div class="skill-inventory-card glass-card">
+                    <div class="skill-logo-box java-box">
+                        <i class="fab fa-java"></i>
+                    </div>
+                    <div class="skill-meta">
+                        <h3>JAVA</h3>
+                        <p>ENTERPRISE LOGIC <span class="status-dot orange"></span></p>
+                    </div>
+                </div>
+
+                <!-- Card 4 (Python) -->
+                <div class="skill-inventory-card glass-card">
+                    <div class="star-badge">STAR</div>
+                    <div class="skill-logo-box python-box">
+                        <i class="fab fa-python"></i>
+                    </div>
+                    <div class="skill-meta">
+                        <h3>PYTHON</h3>
+                        <p>ALGORITHMIC MATRICES <span class="status-dot yellow"></span></p>
+                    </div>
+                </div>
+
+                <!-- Card 5 (Node) -->
+                <div class="skill-inventory-card glass-card">
+                    <div class="skill-logo-box node-box">
+                        <i class="fab fa-node-js"></i>
+                    </div>
+                    <div class="skill-meta">
+                        <h3>NODE</h3>
+                        <p>SYSTEM RUNTIME <span class="status-dot green"></span></p>
+                    </div>
+                </div>
+
+                <!-- Card 6 (Machine Learning) -->
+                <div class="skill-inventory-card glass-card">
+                    <div class="star-badge">STAR</div>
+                    <div class="skill-logo-box ml-box">
+                        <i class="fas fa-brain"></i>
+                    </div>
+                    <div class="skill-meta">
+                        <h3>MACHINE LEARNING</h3>
+                        <p>COGNITIVE MODELS <span class="status-dot green"></span></p>
+                    </div>
+                </div>
+
+                <!-- Card 7 (Data Structure) -->
+                <div class="skill-inventory-card glass-card">
+                    <div class="star-badge">STAR</div>
+                    <div class="skill-logo-box dsa-box">
+                        <i class="fas fa-network-wired"></i>
+                    </div>
+                    <div class="skill-meta">
+                        <h3>DATA STRUCTURE</h3>
+                        <p>LOGIC ENTROPY <span class="status-dot blue"></span></p>
+                    </div>
+                </div>
+
+                <!-- Card 8 (Git GitHub) -->
+                <div class="skill-inventory-card glass-card">
+                    <div class="skill-logo-box github-box">
+                        <i class="fab fa-github"></i>
+                    </div>
+                    <div class="skill-meta">
+                        <h3>GIT GITHUB</h3>
+                        <p>REPOS SYNC <span class="status-dot white"></span></p>
+                    </div>
+                </div>
+
+                <!-- Card 9 (DBMS) -->
+                <div class="skill-inventory-card glass-card">
+                    <div class="skill-logo-box dbms-box">
+                        <i class="fas fa-database"></i>
+                    </div>
+                    <div class="skill-meta">
+                        <h3>DBMS</h3>
+                        <p>DATA MATRIX <span class="status-dot blue"></span></p>
+                    </div>
+                </div>
+
+                <!-- Card 10 (Communication) -->
+                <div class="skill-inventory-card glass-card">
+                    <div class="skill-logo-box comm-box">
+                        <i class="fas fa-comments"></i>
+                    </div>
+                    <div class="skill-meta">
+                        <h3>COMMUNICATION</h3>
+                        <p>ORCHESTRATION <span class="status-dot cyan"></span></p>
+                    </div>
+                </div>
+
+                <!-- Card 11 (Problem Solving) -->
+                <div class="skill-inventory-card glass-card">
+                    <div class="star-badge">STAR</div>
+                    <div class="skill-logo-box ps-box">
+                        <i class="fas fa-puzzle-piece"></i>
+                    </div>
+                    <div class="skill-meta">
+                        <h3>PROBLEM SOLVING</h3>
+                        <p>DECISION TREE LOGIC <span class="status-dot yellow"></span></p>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="projects-section">
+            <h2 class="section-title">Recent Projects</h2>
+            <div class="projects-grid">
+
+                <!-- Project 1 -->
+                <div class="project-card glass-card">
+                    <div class="project-info">
+                        <div class="project-header">
+                            <i class="far fa-folder project-icon-folder"></i>
+                            <a href="https://github.com/pearlnaveen/driftRL-Openenv" target="_blank"
+                                class="project-github-link" title="View Source Code"><i class="fab fa-github"></i></a>
+                        </div>
+                        <h3>driftRL</h3>
+                        <p>A Reinforcement Learning-based system that automatically handles data drift in datasets by
+                            removing missing, duplicate, and invalid data blocks dynamically.</p>
+                        <div class="project-tech">
+                            <span>Python</span><span>Machine Learning</span><span>Docker</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="project-card glass-card">
+                    <div class="project-info">
+                        <div class="project-header">
+                            <i class="far fa-folder project-icon-folder"></i>
+                            <a href="https://github.com/pearlnaveen/Machine-Log-Monitoring-System" target="_blank"
+                                class="project-github-link" title="View Source Code"><i class="fab fa-github"></i></a>
+                        </div>
+                        <h3>Machine Log Monitor</h3>
+                        <p>A full-stack machine monitoring system built with Spring Boot, REST APIs, and a modern
+                            frontend
+                            dashboard to track system health and resolve error logs efficiently.</p>
+                        <div class="project-tech">
+                            <span>Java</span><span>Spring Boot</span><span>Maven</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="project-card glass-card">
+                    <div class="project-info">
+                        <div class="project-header">
+                            <i class="far fa-folder project-icon-folder"></i>
+                            <a href="https://github.com/pearlnaveen/Tour-Booking-Management-System-Using-OOPs-in-c-"
+                                target="_blank" class="project-github-link" title="View Source Code"><i
+                                    class="fab fa-github"></i></a>
+                        </div>
+                        <h3>Tour Booking Manager</h3>
+                        <p>A console-based software applying core Object-Oriented programming concepts in C++ to manage
+                            user
+                            selection, reservations, payments, and receipt file generation.</p>
+                        <div class="project-tech">
+                            <span>C++</span><span>OOPs</span><span>File I/O</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="certifications" class="certifications-section">
+            <h2 class="section-title">Certifications & Achievements</h2>
+            <div class="certifications-grid">
+
+                <!-- Cert 1 -->
+                <div class="cert-card glass-card">
+                    <div class="cert-badge-area">
+                        <i class="fas fa-brain"></i>
+                        <span class="cert-issuer">AI/ML</span>
+                    </div>
+                    <div class="cert-detail">
+                        <h3>Artificial Intelligence Specialization</h3>
+                        <p>Completed certifications in Generative AI, Artificial Intelligence, and Deep Learning, along
+                            with
+                            AI/ML job simulations from Tata and Deloitte, strengthening both theoretical knowledge and
+                            practical industry exposure.</p>
+                    </div>
+                    <a href="https://drive.google.com/drive/folders/1W0sAsQMDZEzJY4N1t-APlTlk0nGguMzr?usp=sharing"
+                        target="_blank" class="cert-verify-link">Verify Credential <i
+                            class="fas fa-arrow-right"></i></a>
+                </div>
+
+                <!-- Cert 2 -->
+                <div class="cert-card glass-card">
+                    <div class="cert-badge-area">
+                        <i class="fas fa-database"></i>
+                        <span class="cert-issuer">Oracle Partners</span>
+                    </div>
+                    <div class="cert-detail">
+                        <h3>Database Design – English</h3>
+                        <p>Certified in Oracle Database fundamentals with practical knowledge of MySQL, SQL, joins,
+                            normalization, and data management.</p>
+                    </div>
+                    <a href="https://drive.google.com/file/d/1mJUfRLOpdPOkabX8UFrIZvT-ASEcnOdN/view?usp=sharing"
+                        target="_blank" class="cert-verify-link">Verify Credential <i
+                            class="fas fa-arrow-right"></i></a>
+                </div>
+
+                <!-- Cert 3 -->
+                <div class="cert-card glass-card">
+                    <div class="cert-badge-area">
+                        <i class="fas fa-trophy"></i>
+                        <span class="cert-issuer">CIT Coimbatore</span>
+                    </div>
+                    <div class="cert-detail">
+                        <h3>Tech Fests (Intellina'26)</h3>
+                        <p>Awarded 2nd place in the UI Design Innovation challenge and achieved Top 5 Finalist status in
+                            the
+                            REACT, RESPOND & RESOLVE algorithm design hackathon at the national CIT fest.</p>
+                    </div>
+                    <a href="https://drive.google.com/drive/folders/1rDL19jEyx1NYubUX1R29G_dN1RkasFcH?usp=sharing"
+                        target="_blank" class="cert-verify-link">Verify Credential <i
+                            class="fas fa-arrow-right"></i></a>
+                </div>
+
+                <!--- Cert 4 --->
+                <div class="cert-card glass-card">
+                    <div class="cert-badge-area">
+                        <i class="fas fa-graduation-cap"></i>
+                        <span class="cert-issuer">NPTEL</span>
+                    </div>
+                    <div class="cert-detail">
+                        <h3>NPTEL Certifications</h3>
+                        <p>Completed professional courses in Deep Learning, Cloud Computing, Industrial IoT 4.0, and
+                            Technical
+                            English, building a solid foundation in modern systems and AI-driven models.</p>
+                    </div>
+                    <a href="https://drive.google.com/drive/folders/1x4wZ3ZrNwvizp0SEiIKDBwD1U-KW-mQX?usp=sharing"
+                        target="_blank" class="cert-verify-link">Verify Credential <i
+                            class="fas fa-arrow-right"></i></a>
+                </div>
+
+                <!--- Cert 5 --->
+                <div class="cert-card glass-card">
+                    <div class="cert-badge-area">
+                        <i class="fas fa-graduation-cap"></i>
+                        <span class="cert-issuer">Simulations</span>
+                    </div>
+                    <div class="cert-detail">
+                        <h3>Job Simulations</h3>
+                        <p>Completed AI & Machine Learning job simulations from Deloitte and Tata, gaining hands-on
+                            experience in data analysis, data preprocessing, machine learning concepts, model
+                            evaluation,
+                            and AI-driven business problem-solving.</p>
+                    </div>
+                    <a href="https://drive.google.com/drive/folders/1QKjegycTsCJFDNhNCr1iXNMzPbc3QrEn?usp=sharing"
+                        target="_blank" class="cert-verify-link">Verify Credential <i
+                            class="fas fa-arrow-right"></i></a>
+                </div>
+
+                <!--- Cert 6 --->
+                <div class="cert-card glass-card">
+                    <div class="cert-badge-area">
+                        <i class="fas fa-graduation-cap"></i>
+                        <span class="cert-issuer">Other</span>
+                    </div>
+                    <div class="cert-detail">
+                        <h3>Other Activities</h3>
+                        <p>Successfully completed several online courses and certifications, gaining knowledge in AI,
+                            MySQL,
+                            cloud computing, graph theory, and technical communication.</p>
+                    </div>
+                    <a href="https://drive.google.com/drive/folders/18OS1G0XjEDEXrhplx3SEA1wKsiBm0A6q?usp=sharing"
+                        target="_blank" class="cert-verify-link">Verify Credential <i
+                            class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+        </section>
+
+        <!-- AI Powerups Section -->
+        <section id="powerups" class="powerups-section">
+            <h2 class="section-title">AI Powerups</h2>
+            <p class="section-description">High-performance intelligence networks and sandboxes used to accelerate
+                cognitive processing, agent orchestration, and code compilation.</p>
+            <div class="powerups-grid">
+
+                <!-- ChatGPT -->
+                <div class="powerup-card glass-card chatgpt-power">
+                    <div class="powerup-glow-ring"></div>
+                    <div class="powerup-logo">
+                        <svg viewBox="0 0 24 24" width="32" height="32" fill="currentColor">
+                            <path
+                                d="M20.5 10.3c.4-1.2.1-2.5-.7-3.4-.8-.9-2.1-1.3-3.3-1v-.3c0-1.3-.7-2.4-1.8-3-1.1-.6-2.5-.5-3.5.2-.6-.9-1.6-1.5-2.7-1.5-1.5 0-2.8 1.1-3.1 2.6-.6-.5-1.5-.7-2.3-.5C2 3.7 1.1 4.7.8 5.9c-.3 1.2 0 2.5.8 3.4-.6.3-1.1.8-1.4 1.4-.7 1.3-.5 2.8.3 3.9.7 1 2 1.5 3.2 1.3v.4c0 1.3.7 2.4 1.8 3 1.1.6 2.5.5 3.5-.2.6.9 1.6 1.5 2.7 1.5 1.5 0 2.8-1.1 3.1-2.6.6.5 1.5.7 2.3.5 1.2-.3 2.1-1.3 2.4-2.5.3-1.2 0-2.5-.8-3.4.6-.3 1.1-.8 1.4-1.4.6-1.2.4-2.7-.4-3.8zm-11.8 11c-.8 0-1.5-.4-1.9-1.1l2.4-1.4c.4.2.9.4 1.4.4.9 0 1.7-.5 2.1-1.3l.1-.3 2.9 1.7c-.5 1.2-1.6 2-3 2zm8-4.6l-2.9-1.7v-.1c0-1-.5-1.9-1.4-2.4l-.4-.2 1.4-2.4c1.2.6 1.9 1.9 1.9 3.3 0 1.3-.5 2.6-1.6 3.5zm-5.4-8.8c.8 0 1.5.4 1.9 1.1L10.8 10c-.4-.2-.9-.4-1.4-.4-.9 0-1.7.5-2.1 1.3l-.1.3-2.9-1.7c.6-1.2 1.7-2 3-2.5zm-6 3.3c.4-.2.8-.3 1.2-.3v3.4c-.9 0-1.7-.5-2.1-1.3l-.1-.3c-.3-.9-.2-2 .5-2.7l.6.9zm1.7 4.1l2.9 1.7v.1c0 1 .5 1.9 1.4 2.4l.4.2-1.4 2.4c-1.2-.6-1.9-1.9-1.9-3.3v-3.5zM12 13.5c-.8 0-1.5-.7-1.5-1.5s.7-1.5 1.5-1.5 1.5.7 1.5 1.5-.7 1.5-1.5 1.5zm6.5-1v-3.4c.9 0 1.7.5 2.1 1.3l.1.3c.3.9.2 2-.5 2.7l-.6-.9z" />
+                        </svg>
+                    </div>
+                    <div class="powerup-info">
+                        <h3>ChatGPT</h3>
+                        <span>OPENAI ENGINE</span>
+                        <p>Reasoning, debugging assistance, and linguistic logic parsing.</p>
+                    </div>
+                    <div class="powerup-status"><span class="status-light online"></span> ACTIVE</div>
+                </div>
+
+                <!-- Gemini -->
+                <div class="powerup-card glass-card gemini-power">
+                    <div class="powerup-glow-ring"></div>
+                    <div class="powerup-logo">
+                        <svg viewBox="0 0 24 24" width="32" height="32" fill="currentColor">
+                            <path
+                                d="M12 2a1 1 0 0 0-1 1c0 4.5-3.5 8-8 8a1 1 0 0 0 0 2c4.5 0 8 3.5 8 8a1 1 0 0 0 2 0c0-4.5 3.5-8 8-8a1 1 0 0 0 0-2c-4.5 0-8-3.5-8-8a1 1 0 0 0-1-1z" />
+                            <path
+                                d="M19 4a.5.5 0 0 0-.5.5c0 2.2-1.8 4-4 4a.5.5 0 0 0 0 1c2.2 0 4 1.8 4 4a.5.5 0 0 0 1 0c0-2.2 1.8-4 4-4a.5.5 0 0 0 0-1c-2.2 0-4-1.8-4-4a.5.5 0 0 0-.5-.5z"
+                                opacity="0.7" />
+                        </svg>
+                    </div>
+                    <div class="powerup-info">
+                        <h3>Gemini</h3>
+                        <span>GOOGLE CORE</span>
+                        <p>Multi-modal analysis, context mapping, and code design.</p>
+                    </div>
+                    <div class="powerup-status"><span class="status-light online"></span> ACTIVE</div>
+                </div>
+
+                <!-- Claude -->
+                <div class="powerup-card glass-card claude-power">
+                    <div class="powerup-glow-ring"></div>
+                    <div class="powerup-logo">
+                        <svg viewBox="0 0 24 24" width="32" height="32" fill="currentColor">
+                            <path
+                                d="M12 1.5c-.5 0-1 .4-1.1.9l-.8 4c-.1.5.2 1 .7 1.2s1.1 0 1.3-.5l1.6-3.7c.2-.5 0-1.1-.5-1.3-.4-.1-.8-.1-1.2 0zM5.5 4.3c-.4-.3-1-.2-1.3.2s-.2 1 .2 1.3l3.3 2.5c.4.3 1 .2 1.3-.2s.2-1-.2-1.3L5.5 4.3zM18.5 4.3l-3.3 2.5c-.4.3-.5.9-.2 1.3s.9.5 1.3.2l3.3-2.5c.4-.3.5-.9.2-1.3s-.9-.5-1.3-.2zM2.3 10.9c-.5.1-.9.6-.9 1.1 0 .5.4 1 .9 1.1l4 .8c.5.1 1-.2 1.2-.7s0-1.1-.5-1.3l-3.7-1.6c-.3-.1-.7-.1-1 .1zM21.7 10.9l-3.7 1.6c-.5.2-.7.8-.5 1.3s.8.7 1.2.5l4-.8c.5-.1.9-.6.9-1.1 0-.5-.4-1-.9-1.2-.3-.1-.7-.1-1 .1zM8.8 15.2l-3.3 2.5c-.4.3-.5.9-.2 1.3s.9.5 1.3.2l3.3-2.5c.4-.3.5-.9.2-1.3s-.9-.5-1.3-.2zm6.4 0c-.4.3-.5.9-.2 1.3s.9.5 1.3.2l3.3-2.5c.4-.3.5-.9.2-1.3s-.9-.5-1.3-.2l-3.3 2.5zM12 16.5c-.5 0-1 .4-1.1.9l-.8 4c-.1.5.2 1 .7 1.2s1.1 0 1.3-.5l1.6-3.7c.2-.5 0-1.1-.5-1.3-.4-.1-.8-.1-1.2 0z" />
+                        </svg>
+                    </div>
+                    <div class="powerup-info">
+                        <h3>Claude</h3>
+                        <span>ANTHROPIC SYSTEM</span>
+                        <p>Advanced synthesis, logic validation, and system planning.</p>
+                    </div>
+                    <div class="powerup-status"><span class="status-light online"></span> ACTIVE</div>
+                </div>
+
+                <!-- Grok -->
+                <div class="powerup-card glass-card grok-power">
+                    <div class="powerup-glow-ring"></div>
+                    <div class="powerup-logo">
+                        <svg viewBox="0 0 24 24" width="32" height="32" fill="currentColor">
+                            <path
+                                d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
+                        </svg>
+                    </div>
+                    <div class="powerup-info">
+                        <h3>Grok</h3>
+                        <span>XAI MATRIX</span>
+                        <p>Real-time knowledge streaming and prompt testing.</p>
+                    </div>
+                    <div class="powerup-status"><span class="status-light standby"></span> STANDBY</div>
+                </div>
+
+                <!-- Anti Gravity -->
+                <div class="powerup-card glass-card antigravity-power">
+                    <div class="powerup-glow-ring"></div>
+                    <div class="powerup-logo">
+                        <svg viewBox="0 0 24 24" width="32" height="32" fill="currentColor">
+                            <circle cx="12" cy="12" r="9" fill="none" stroke="currentColor" stroke-width="1.5"
+                                stroke-dasharray="6 3" />
+                            <circle cx="12" cy="12" r="5" fill="none" stroke="currentColor" stroke-width="1" />
+                            <circle cx="12" cy="12" r="2.5" />
+                            <circle cx="12" cy="3" r="1.5" />
+                            <circle cx="7" cy="12" r="1" />
+                        </svg>
+                    </div>
+                    <div class="powerup-info">
+                        <h3>Anti Gravity</h3>
+                        <span>DEEPMIND SDK</span>
+                        <p>Agentic pairing, environment execution, and tool routing.</p>
+                    </div>
+                    <div class="powerup-status"><span class="status-light online"></span> ACTIVE</div>
+                </div>
+
+                <!-- Replit -->
+                <div class="powerup-card glass-card replit-power">
+                    <div class="powerup-glow-ring"></div>
+                    <div class="powerup-logo">
+                        <svg viewBox="0 0 24 24" width="32" height="32" fill="none" stroke="currentColor"
+                            stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M5 4h8v4H5zM9 10h8v4H9zM5 16h8v4H5z" fill="currentColor" stroke="none" />
+                        </svg>
+                    </div>
+                    <div class="powerup-info">
+                        <h3>Replit</h3>
+                        <span>SANDBOX CORE</span>
+                        <p>Isolated code compilation, rapid hosting, and scripting tests.</p>
+                    </div>
+                    <div class="powerup-status"><span class="status-light online"></span> ACTIVE</div>
+                </div>
+
+                <!-- Perplexity -->
+                <div class="powerup-card glass-card perplexity-power">
+                    <div class="powerup-glow-ring"></div>
+                    <div class="powerup-logo">
+                        <svg viewBox="0 0 24 24" width="32" height="32" fill="none" stroke="currentColor"
+                            stroke-width="1.8" stroke-linecap="round">
+                            <path d="M12 2v20M2 12h20M4.93 4.93l14.14 14.14M4.93 19.07L19.07 4.93" />
+                            <circle cx="12" cy="12" r="6" fill="none" />
+                            <circle cx="12" cy="12" r="1.5" fill="currentColor" />
+                        </svg>
+                    </div>
+                    <div class="powerup-info">
+                        <h3>Perplexity</h3>
+                        <span>RESEARCH ENGINE</span>
+                        <p>Automated query mapping, documentation extraction, and sourcing.</p>
+                    </div>
+                    <div class="powerup-status"><span class="status-light online"></span> ACTIVE</div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Core Capabilities Section -->
+        <section id="capabilities" class="capabilities-section">
+            <h2 class="section-title">Core Capabilities</h2>
+            <p class="section-description">What I help build: translating AI algorithms and robust software
+                architectures into functional, secure product ecosystems.</p>
+            <div class="capabilities-grid">
+
+                <!-- Capability 1: ML Models -->
+                <div class="capability-card glass-card">
+                    <div class="capability-icon">
+                        <i class="fas fa-brain"></i>
+                    </div>
+                    <h3>Building ML Models</h3>
+                    <p>I enjoy developing machine learning models and exploring how data can solve real-world
+                        problems. I have worked on data preprocessing, model training, and evaluation using Python and
+                        Scikit-learn,
+                        while continuously learning advanced topics like Reinforcement Learning and Deep Learning.</p>
+                    <ul class="capability-bulletpoints">
+                        <li><i class="fas fa-check-circle"></i> Machine Learning Fundamentals</li>
+                        <li><i class="fas fa-check-circle"></i> Data Preprocessing</li>
+                        <li><i class="fas fa-check-circle"></i> Model Training & Evaluation</li>
+                    </ul>
+                </div>
+
+                <!-- Capability 2: AI Agents -->
+                <div class="capability-card glass-card">
+                    <div class="capability-icon">
+                        <i class="fas fa-robot"></i>
+                    </div>
+                    <h3>Building AI Agents</h3>
+                    <p>I build AI-powered applications that combine Large Language Models with intelligent
+                        workflows. I enjoy experimenting with prompt engineering, context management, and
+                        tool integration to create assistants that understand user queries and automate tasks.</p>
+                    <ul class="capability-bulletpoints">
+                        <li><i class="fas fa-check-circle"></i> Prompt Engineering</li>
+                        <li><i class="fas fa-check-circle"></i> AI Agent Development</li>
+                        <li><i class="fas fa-check-circle"></i> LLM & Tool Integration</li>
+                    </ul>
+                </div>
+
+                <!-- Capability 3: Web Applications -->
+                <div class="capability-card glass-card">
+                    <div class="capability-icon">
+                        <i class="fas fa-laptop-code"></i>
+                    </div>
+                    <h3>Building Web Applications</h3>
+                    <p>I develop responsive full-stack web applications using modern web technologies. I have
+                        experience building REST APIs, designing databases,
+                        and creating interactive user interfaces with Java, Spring Boot, HTML, CSS, and JavaScript.</p>
+                    <ul class="capability-bulletpoints">
+                        <li><i class="fas fa-check-circle"></i> Spring Boot REST APIs</li>
+                        <li><i class="fas fa-check-circle"></i> Responsive UX Interfaces</li>
+                        <li><i class="fas fa-check-circle"></i> Relational Database Normalization</li>
+                    </ul>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact-section">
+            <h2 class="section-title">Get In Touch</h2>
+            <div class="contact-grid">
+
+                <!-- Contact Details -->
+                <div class="contact-details glass-card">
+                    <p>Whether you're looking for collaboration, internship projects, or software engineering
+                        opportunities,
+                        feel free to reach out. I'm always excited to connect!</p>
+                    <div class="contact-info">
+
+                        <div class="contact-item">
+                            <div class="contact-icon"><i class="fas fa-envelope"></i></div>
+                            <div class="contact-info-text">
+                                <h4>Email</h4>
+                                <p><a href="mailto:pearlnaveen24@gmail.com">pearlnaveen24@gmail.com</a></p>
+                            </div>
+                        </div>
+
+                        <div class="contact-item">
+                            <div class="contact-icon"><i class="fas fa-phone"></i></div>
+                            <div class="contact-info-text">
+                                <h4>Phone</h4>
+                                <p><a href="tel:+916374668011">+91 6374668011</a></p>
+                            </div>
+                        </div>
+
+                        <div class="contact-item">
+                            <div class="contact-icon"><i class="fas fa-map-marker-alt"></i></div>
+                            <div class="contact-info-text">
+                                <h4>Location</h4>
+                                <p>Tirunelveli, India</p>
+                            </div>
+                        </div>
+
+                        <div class="contact-item">
+                            <div class="contact-icon"><i class="fab fa-linkedin-in"></i></div>
+                            <div class="contact-info-text">
+                                <h4>LinkedIn</h4>
+                                <p><a href="https://www.linkedin.com/in/muthu-naveen-n-24104028cse/"
+                                        target="_blank">linkedin.com/in/muthu-naveen-n-24104028cse</a></p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- Contact Form -->
+                <div class="contact-container">
+                    <form id="contact-form" class="contact-form">
+                        <input type="hidden" name="access_key" value="5c01021c-52f4-405f-8767-ee8f0a9e1d7c">
+                        <div class="form-group">
+                            <label for="name">Your Name</label>
+                            <input type="text" id="name" name="name" placeholder="John Doe" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Your Email</label>
+                            <input type="email" id="email" name="email" placeholder="john@example.com" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" rows="6"
+                                placeholder="Hi Naveen, let's collaborate on..." required></textarea>
+                        </div>
+                        <button type="submit" class="btn primary-btn">Send Message <i
+                                class="fas fa-paper-plane"></i></button>
+                    </form>
+                </div>
+
+            </div>
+
+            <!-- Footer -->
+            <footer>
+                <p>&copy; 2026 Muthu Naveen N. All rights reserved. Crafted with passion & design excellence.</p>
+            </footer>
+        </section>
+
+    </main>
+
+    <!-- Chatbot Widget -->
+
+    <div id="chatbot-widget">
+        <!-- Floating Chat Bubble Toggle Button -->
+        <button id="chatbot-toggle-btn" class="chatbot-toggle" title="Chat with Naveen's AI">
+            <span class="chatbot-icon"><i class="fas fa-robot"></i></span>
+            <span class="chatbot-badge">AI</span>
+        </button>
+    </div>
+    <!-- Chatbot Panel Container -->
+    <div id="chatbot-panel" class="chatbot-panel glass-card hidden">
+        <!-- Header -->
+        <div class="chatbot-header">
+            <div class="chatbot-brand">
+                <div class="chatbot-avatar">
+                    <i class="fas fa-robot"></i>
+                    <span class="online-indicator"></span>
+                </div>
+                <div class="chatbot-title-info">
+                    <h4>Naveen AI</h4>
+                    <span>Assistant (Online)</span>
+                </div>
+            </div>
+            <div class="chatbot-header-actions">
+                <button id="chatbot-clear-btn" title="Clear Conversation"><i class="fas fa-trash-alt"></i></button>
+                <button id="chatbot-minimize-btn" title="Minimize"><i class="fas fa-minus"></i></button>
+                <button id="chatbot-close-btn" title="Close"><i class="fas fa-times"></i></button>
+            </div>
+        </div>
+
+        <!-- Messages Logs -->
+        <div id="chatbot-messages" class="chatbot-messages">
+            <div class="message chatbot-msg system-msg">
+                <div class="message-bubble">
+                    <p>Hi! I'm Muthu Naveen N's AI assistant. Ask me anything about his projects, skills, education,
+                        certifications, or how to contact him. 🤖</p>
+                </div>
+                <span class="message-time">Just now</span>
+            </div>
+
+            <!-- Suggested Prompt Buttons Grid -->
+            <div id="chatbot-suggestions" class="chatbot-suggestions">
+                <p class="suggestions-label">Suggested Prompts:</p>
+                <div class="suggestions-grid">
+                    <button class="suggestion-chip">Tell me about yourself</button>
+                    <button class="suggestion-chip">Explain your projects</button>
+                    <button class="suggestion-chip">What are your technical skills?</button>
+                    <button class="suggestion-chip">Show your resume</button>
+                    <button class="suggestion-chip">Show your GitHub</button>
+                    <button class="suggestion-chip">Contact you</button>
+                    <button class="suggestion-chip">Explain your AI projects</button>
+                    <button class="suggestion-chip">What technologies do you know?</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer / Input Form -->
+        <div class="chatbot-footer">
+            <form id="chatbot-form" class="chatbot-input-container">
+                <input type="text" id="chatbot-input" placeholder="Type a message..." autocomplete="off" required>
+                <button type="submit" id="chatbot-send-btn" title="Send Message">
+                    <i class="fas fa-paper-plane"></i>
+                </button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Markdown Parser CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    <!-- Code Syntax Highlighter CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js"></script>
+    <!-- Python grammar support for syntax highlighting -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-python.min.js"></script>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,23 @@
+[
+  {
+    "company": "Tata & Deloitte (Job Simulations via Forage)",
+    "role": "AI/ML Participant / Simulation Contributor",
+    "period": "Recent",
+    "description": "Completed virtual job simulations in AI & Machine Learning. Gained hands-on exposure to data analysis, data preprocessing, machine learning model evaluation, and applying AI to resolve business-critical issues.",
+    "highlights": [
+      "Analyzed datasets and prepared data pipelines for model consumption.",
+      "Evaluated model performance and created presentations explaining AI findings to business stakeholders.",
+      "Strengthened problem-solving frameworks in real-world consulting environments."
+    ]
+  },
+  {
+    "company": "National Engineering College",
+    "role": "Computer Science & Engineering Student",
+    "period": "2022 - Present",
+    "description": "Engaged in hands-on backend and AI projects, algorithm design competitions, and coursework focused on Core CS paradigms.",
+    "highlights": [
+      "Completed projects driftRL, Machine Log Monitor, and Tour Booking Manager.",
+      "Active participant in technical symposiums and coding competitions."
+    ]
+  }
+]

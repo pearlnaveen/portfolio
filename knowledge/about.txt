@@ -1,0 +1,20 @@
+Muthu Naveen N is an aspiring Software Engineer & AI Enthusiast.
+He is dedicated to building scalable software, AI-powered applications, and robust backend solutions.
+He is a Computer Science student with proficiency in C/C++ and intermediate-level Java, and a strong interest in Artificial Intelligence.
+He focuses on developing efficient and reliable software solutions using core programming principles, as well as building scalable AI models and real-world AI applications.
+
+Primary Interests:
+- Artificial Intelligence
+- Machine Learning
+- Backend Engineering
+- Data Structures & Algorithms
+- Object-Oriented Programming
+
+Location: Tirunelveli, India
+Email: pearlnaveen24@gmail.com
+Phone: +91 6374668011
+LinkedIn: https://www.linkedin.com/in/muthu-naveen-n-24104028cse/
+GitHub: https://github.com/pearlnaveen
+Portfolio: http://localhost:3000 (or current URL)
+Resume: /knowledge/resume.pdf (Available for download)
+Role readiness: Ready for Internships & Software Engineer / AI Developer Roles.
